@@ -51,6 +51,12 @@ export class RegisterService {
        debugger;
       return this.httpClient.put<number>(this.apiServer + '/Customers/' + id, JSON.stringify(customer), this.httpOptions)
     }
+    DeleteCustomer(id){
+      return this.httpClient.delete<Customer>(this.apiServer + '/Customers/' + id, this.httpOptions)    
+    }
+    GetByProductId(id):Observable<Product>{ 
+      return this.httpClient.get<Product>(this.apiServer + '/productsMasters?id=' + id)
+    }
 
 
 

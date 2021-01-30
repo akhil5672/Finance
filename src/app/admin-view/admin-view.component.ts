@@ -22,8 +22,11 @@ export class AdminViewComponent implements OnInit {
       this.user = data;
       console.log(data);
       })
-    
-  }
-
-
+    }
+    delete(customer_id)
+    {
+      this.service.DeleteCustomer(customer_id).subscribe();
+      location.reload();
+    }
 }
+

@@ -33,8 +33,7 @@
  
                         <td><button class="btn btn-success" type="submit" [routerLink]="['/AdminActivate/', u.customer_id]">Verify
                             </button></td>
-                        <td><button class="btn btn-success" type="submit" value="Submit"
-                                >Delete</button></td>
+                        <td><button class="btn btn-success" type="button" (click)="delete(u.customer_id)">Delete</button></td>
                     </tr>
                 </tbody>
  

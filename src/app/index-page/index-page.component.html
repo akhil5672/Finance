@@ -35,7 +35,7 @@
             <span><strong>DETAILS:</strong> </span>
               <div [innerHTML]="p.product_details"></div>           
           <p><strong>COST: {{p.product_price}}</strong></p>
-           <button type="button"><strong>BUY NOW</strong></button>
+           <button type="button" [routerLink]="['/ProductInfo/', p.product_id]"><strong>BUY NOW</strong></button>
            <br><br><br>
           </div>
           </div>

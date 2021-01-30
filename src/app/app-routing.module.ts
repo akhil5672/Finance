@@ -10,12 +10,14 @@ import {UserLoginComponent} from './user-login/user-login.component';
 import {RegisterComponent} from './register/register.component';
 import {AdminViewComponent} from './admin-view/admin-view.component';
 import { AdminActivateComponent } from './admin-activate/admin-activate.component';
+import {ProductInfoComponent} from './product-info/product-info.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'Index', pathMatch:'full'},
   {path:'Index',component:IndexPageComponent},
   {path:'Register', component:RegisterComponent},
   {path:'AdminActivate/:customer_id', component:AdminActivateComponent},
+  {path:'ProductInfo/:product_id', component:ProductInfoComponent},
   {path:'Login',component:LoginPageComponent},
   {path:'UserLogin', component:UserLoginComponent},
   {path:'AdminLogin',component:AdminLoginComponent},
