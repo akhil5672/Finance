@@ -1,0 +1,37 @@
+<!-- <div class="container-fluid">
+<div class="row">
+    <div class="col-md-6">
+<div class="card"> -->
+    <div class="top">
+        <div style="margin-top: 30px; margin-bottom: 150px; width: 500px;" class="card">
+    <div class="card-header">
+    <h3>Activate User's Account</h3>
+    </div>
+    <div class="card-body">
+        <form #f="ngForm" >
+            <div class="form-group">
+                <input type="radio" style="height:15px; width:15px;" id="cardtype" [(ngModel)]="status" name="cardtype" value=true>&nbsp;<span style="position: fixed; font-size:18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" ><b>YES</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" style="height:15px; width:15px;" id="cardtype" [(ngModel)]="status" name="cardtype" value=false>&nbsp;<span style="position: fixed; font-size:18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><b>NO</b></span>
+            </div>                        
+        </form>
+        <br>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        
+    </div>
+</div>
+</div>
+
+<style>
+    .card-body{
+        text-align: center;
+    }
+    .top{
+        padding-top: 150px;
+    }
+    button{
+        width: fit-content;
+    }
+    .card-header{
+        text-align: center;
+    }
+</style>

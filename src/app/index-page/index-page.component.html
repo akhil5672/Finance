@@ -1,0 +1,45 @@
+<div style="background-image: url('../../assets/images/backgroundimage.jpeg');">
+    <div class="topnav">
+      <table id="nav_table">
+        <tr>
+        <th><a routerLink="/Register"><span style="color:black;font-family: sans-serif;font-size: 20px;">REGISTER</span></a></th>
+        <th><a routerLink="/Login"><span style="color:black;font-family: sans-serif;font-size: 20px;">LOGIN</span></a></th>
+      </tr>
+    </table>
+    </div>
+  <main class="container" style="background-color:#f8eded">
+    
+      <div class="leftc">
+        <div *ngFor="let p of products">
+          <img [src]="p.product_image" height="250">
+          <br><br><br>
+        </div>
+          <!-- <img src="../../assets/images/Marshall.png"height="250">
+          <br><br><br>
+          <img src="../../assets/images/boat.png"height="250">
+          <br><br><br><br>
+          <img src="../../assets/images/Oneplus.png"height="250">
+          <br><br><br>
+          <img src="../../assets/images/Dell.png"height="250">
+          <br><br><br>
+          <img src="../../assets/images/Fossil.png"height="250">
+          <br><br><br>
+          <img src="../../assets/images/Nikon.png"height="250">
+          <br><br><br> -->
+      </div>
+  
+      <div class="rightc">
+        <div *ngFor="let p of products">
+          <div class="MAIN PRODUCT DETAILS">
+              <h1>{{p.product_name}}</h1>
+            <span><strong>DETAILS:</strong> </span>
+              <div [innerHTML]="p.product_details"></div>           
+          <p><strong>COST: {{p.product_price}}</strong></p>
+           <button type="button"><strong>BUY NOW</strong></button>
+           <br><br><br>
+          </div>
+          </div>
+      </div>
+  </main>
+</div>
+  
